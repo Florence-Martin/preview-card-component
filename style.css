@@ -1,0 +1,97 @@
+@import url(./css/reset.css);
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+
+:root {
+  --bp-md: 375px;
+  --very-dark-blue: #090b1a;
+  --dark-sat-blue: #1b1938;
+  --soft-violet: #aa5cdb;
+  --headings: #ffffff;
+  --paragraph: #ffffffbf;
+  --stat-headings: #ffffff99;
+  --inter: "Inter", sans-serif;
+  --lexend: "Lexend Deca", sans-serif;
+}
+
+body {
+  font-size: 15px;
+  background-color: var(--very-dark-blue);
+  color: var(--paragraph);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+  border-radius: 10px;
+  background-color: var(--dark-sat-blue);
+}
+
+.text-section {
+  padding: 4rem 5rem;
+}
+
+.text-section > h1 {
+  font-size: 2.4rem;
+  font-family: var(--inter);
+  font-weight: bold;
+  color: var(--headings);
+}
+
+.text-section > p {
+  margin-top: 2rem;
+  font-size: 1rem;
+  font-family: var(--inter);
+  line-height: 1.6rem;
+  color: var(--stat-headings);
+}
+
+.stats {
+  display: flex;
+  margin-top: 5rem;
+  text-transform: uppercase;
+  justify-content: flex-start;
+}
+
+.stat > h1 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  font-family: var(--inter);
+}
+
+.stat > p {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: var(--stat-headings);
+  font-family: var(--lexend);
+}
+
+.stat:not(:first-child) {
+  margin-left: 2rem;
+}
+
+.image-section {
+  position: relative;
+  display: flex;
+}
+
+img,
+.cover {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.cover {
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  background-color: hsla(277, 80%, 30%, 0.5);
+}
+
+.accent {
+  color: var(--soft-violet);
+}
